@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+
+    <Appenders>
+
+        <!-- Console appender — coloured, human-readable for local dev -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} — %msg%n"/>
+        </Console>
+
+        <!-- Rolling-file appender — kept for CI artefact archiving -->
+        <RollingFile name="RollingFile"
+                     fileName="logs/restful-booker.log"
+                     filePattern="logs/restful-booker-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout
+                pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} — %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+
+        <!-- Framework logger — DEBUG to catch spec-builder and service detail -->
+        <Logger name="com.restfulbooker" level="DEBUG" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Logger>
+
+        <!-- REST Assured internal — INFO to avoid wire-level noise -->
+        <Logger name="io.restassured" level="INFO" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <!-- Allure internal — WARN to suppress attach/step chatter -->
+        <Logger name="io.qameta.allure" level="WARN" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <!-- Root catch-all -->
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+
+    </Loggers>
+
+</Configuration>

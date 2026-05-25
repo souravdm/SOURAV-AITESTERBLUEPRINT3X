@@ -1,0 +1,30 @@
+{
+  "_comment": "Test data for GET /ping. All values are derived from the Restful Booker API spec.",
+  "_specReference": "https://restful-booker.herokuapp.com/apidoc/index.html#api-Ping-Ping",
+  "endpoint": "/ping",
+  "method": "GET",
+  "expectedStatusCode": 201,
+  "expectedBody": "Created",
+  "expectedContentType": "text/plain",
+  "slaMs": 2000,
+  "description": "Health-check endpoint — returns 201 Created with a plain-text body.",
+  "requirementIds": [
+    "REQ-HC-001",
+    "REQ-HC-002",
+    "REQ-HC-003",
+    "REQ-HC-004",
+    "REQ-HC-005",
+    "REQ-HC-006",
+    "REQ-HC-007",
+    "REQ-HC-008",
+    "REQ-HC-009",
+    "REQ-HC-010",
+    "REQ-HC-011",
+    "REQ-HC-012"
+  ],
+  "notes": [
+    "JSON Schema Validator is not applicable for this endpoint — response is text/plain, not JSON.",
+    "Methods TC-API-005 through TC-API-009 and TC-API-011 are tagged [Inference (low confidence)].",
+    "Update expectedStatusCode for invalid-method tests if the live server returns 405 instead of 404."
+  ]
+}

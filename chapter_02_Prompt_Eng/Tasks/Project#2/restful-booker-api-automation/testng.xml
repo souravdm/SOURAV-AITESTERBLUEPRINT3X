@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+    Restful Booker API Automation — TestNG Master Suite
+    Run all:         mvn clean test
+    Smoke only:      mvn clean test -Dgroups=smoke
+    Regression:      mvn clean test -Dgroups=regression
+    Performance:     mvn clean test -Dgroups=performance
+    Negative:        mvn clean test -Dgroups=negative
+-->
+<suite name="Restful Booker API Automation Suite"
+       verbose="2"
+       parallel="false"
+       thread-count="1">
+
+    <parameter name="env" value="default"/>
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Health Check — GET /ping">
+        <classes>
+            <class name="com.restfulbooker.automation.tests.PingTests"/>
+        </classes>
+    </test>
+
+    <!--
+        Placeholder tests for future Restful Booker endpoints.
+        Un-comment and add class references when those services are implemented.
+
+        <test name="Authentication — POST /auth">
+            <classes>
+                <class name="com.restfulbooker.automation.tests.AuthTests"/>
+            </classes>
+        </test>
+
+        <test name="Booking CRUD">
+            <classes>
+                <class name="com.restfulbooker.automation.tests.BookingTests"/>
+            </classes>
+        </test>
+    -->
+
+</suite>
