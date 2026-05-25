@@ -1,4 +1,7 @@
 
+
+
+
 **1. Overview & API Endpoints**
 
 *   The document details several API endpoints related to booking management:
