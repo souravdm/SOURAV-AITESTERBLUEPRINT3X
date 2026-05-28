@@ -20,7 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Dependency versions -->
-        <rest-assured.version>5.4.0</rest-assured.version>
+        <rest-assured.version>5.5.0</rest-assured.version>
         <testng.version>7.9.0</testng.version>
         <extent-reports.version>5.1.1</extent-reports.version>
         <jackson.version>2.17.0</jackson.version>
@@ -33,7 +33,6 @@
         <faker.version>1.0.2</faker.version>
         <snakeyaml.version>2.2</snakeyaml.version>
         <wiremock.version>3.4.2</wiremock.version>
-        <json-schema-validator.version>5.4.0</json-schema-validator.version>
 
         <!-- Plugin versions -->
         <maven-surefire.version>3.2.5</maven-surefire.version>
@@ -42,20 +41,32 @@
         <!-- Default suite / env  (overridable via -D) -->
         <suiteXmlFile>testsuites/smoke.xml</suiteXmlFile>
         <env>qa</env>
+
+        <!-- Defaults so surefire doesn't choke on undefined -Dgroups / -DexcludedGroups -->
+        <groups></groups>
+        <excludedGroups></excludedGroups>
     </properties>
 
     <dependencies>
-        <!-- REST Assured -->
+        <!-- REST Assured (compile scope: used by src/main/java clients) -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>${rest-assured.version}</version>
         </dependency>
+
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>json-schema-validator</artifactId>
-            <version>${json-schema-validator.version}</version>
+            <version>${rest-assured.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-path</artifactId>
+            <version>${rest-assured.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>xml-path</artifactId>
@@ -84,12 +95,18 @@
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
+            <artifactId>jackson-core</artifactId>
             <version>${jackson.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-yaml</artifactId>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <!-- Required for LocalDate / LocalDateTime in BookingDates model -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
             <version>${jackson.version}</version>
         </dependency>
 
@@ -108,7 +125,7 @@
             <version>${assertj.version}</version>
         </dependency>
 
-        <!-- Logging -->
+        <!-- Logging: SLF4J API + Logback implementation -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -132,34 +149,26 @@
             <version>${poi.version}</version>
         </dependency>
 
-        <!-- OpenCSV -->
-        <dependency>
-            <groupId>com.opencsv</groupId>
-            <artifactId>opencsv</artifactId>
-            <version>${opencsv.version}</version>
-        </dependency>
-
-        <!-- Java Faker -->
+        <!-- Java Faker (excluding its stale SnakeYAML 1.x) -->
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <version>${faker.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.yaml</groupId>
+                    <artifactId>snakeyaml</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
-        <!-- SnakeYAML (run-config.yaml parsing) -->
+        <!-- SnakeYAML 2.x (run-config.yaml + replaces JavaFaker's old version) -->
         <dependency>
             <groupId>org.yaml</groupId>
             <artifactId>snakeyaml</artifactId>
             <version>${snakeyaml.version}</version>
         </dependency>
 
-        <!-- WireMock (contract/mock tests) -->
-        <dependency>
-            <groupId>org.wiremock</groupId>
-            <artifactId>wiremock</artifactId>
-            <version>${wiremock.version}</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -192,7 +201,6 @@
                     <systemPropertyVariables>
                         <env>${env}</env>
                     </systemPropertyVariables>
-                    <!-- Allow passing -Dgroups and -DexcludedGroups -->
                     <groups>${groups}</groups>
                     <excludedGroups>${excludedGroups}</excludedGroups>
                     <argLine>-Dfile.encoding=UTF-8</argLine>
