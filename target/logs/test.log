@@ -1156,3 +1156,12 @@ java.lang.IllegalArgumentException: Cannot serialize because cannot determine ho
 2026-05-28 19:46:30.430 [TestNG-test-Regression — Contract-1] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
 2026-05-28 19:46:30.673 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
 2026-05-28 19:46:30.709 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
+2026-05-28 20:05:09.904 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project#2/restful-booker-api-automation-advanced/testsuites/regression.xml
+
+2026-05-28 20:05:09.908 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/framework.properties
+2026-05-28 20:05:09.908 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/qa.properties
+2026-05-28 20:05:09.908 [main] INFO  com.restfulbooker.api.config.ConfigManager - ConfigManager initialised — env=qa
+2026-05-28 20:05:10.004 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports initialised — output: target/extent-report/index.html
+2026-05-28 20:05:10.858 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
+2026-05-28 20:05:10.889 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
