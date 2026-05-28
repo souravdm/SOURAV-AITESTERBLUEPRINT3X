@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite" verbose="1" parallel="classes" thread-count="4">
+
+    <listeners>
+        <listener class-name="com.restfulbooker.api.listeners.ExtentTestNGListener"/>
+        <listener class-name="com.restfulbooker.api.listeners.RetryListener"/>
+    </listeners>
+
+    <test name="Regression — Smoke">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.restfulbooker.api.tests.smoke.PingTests"/>
+            <class name="com.restfulbooker.api.tests.smoke.AuthSmokeTests"/>
+        </classes>
+    </test>
+
+    <test name="Regression — Auth">
+        <groups>
+            <run>
+                <include name="regression"/>
+                <exclude name="wip"/>
+                <exclude name="flaky"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.restfulbooker.api.tests.regression.AuthTests"/>
+        </classes>
+    </test>
+
+    <test name="Regression — Booking CRUD">
+        <groups>
+            <run>
+                <include name="regression"/>
+                <exclude name="wip"/>
+                <exclude name="flaky"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.restfulbooker.api.tests.regression.BookingGetTests"/>
+            <class name="com.restfulbooker.api.tests.regression.CreateBookingTests"/>
+            <class name="com.restfulbooker.api.tests.regression.UpdateBookingTests"/>
+            <class name="com.restfulbooker.api.tests.regression.PatchBookingTests"/>
+            <class name="com.restfulbooker.api.tests.regression.DeleteBookingTests"/>
+        </classes>
+    </test>
+
+    <test name="Regression — Boundary &amp; Negative">
+        <groups>
+            <run>
+                <include name="negative"/>
+                <include name="boundary"/>
+                <exclude name="wip"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.restfulbooker.api.tests.negative.BoundaryTests"/>
+        </classes>
+    </test>
+
+    <test name="Regression — Contract">
+        <groups>
+            <run>
+                <include name="contract"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.restfulbooker.api.tests.contract.BookingContractTests"/>
+        </classes>
+    </test>
+
+</suite>

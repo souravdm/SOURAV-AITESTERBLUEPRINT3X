@@ -1,0 +1,85 @@
+name: Restful-Booker API Tests
+
+on:
+  push:
+    branches: [main, develop]
+    paths:
+      - 'Chapter_02_Prompt_Eng/Tasks/Project#2/restful-booker-api-automation-Sample2/**'
+  pull_request:
+    branches: [main, develop]
+  schedule:
+    # Nightly regression at 02:00 UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      env:
+        description: 'Target environment'
+        required: true
+        default: 'qa'
+        type: choice
+        options: [qa, stage, prod]
+      suite:
+        description: 'TestNG suite'
+        required: true
+        default: 'regression'
+        type: choice
+        options: [smoke, sanity, regression, e2e]
+
+env:
+  WORKING_DIR: Chapter_02_Prompt_Eng/Tasks/Project#2/restful-booker-api-automation-Sample2
+
+jobs:
+  api-tests:
+    name: API Tests — ${{ github.event.inputs.suite || 'regression' }} (${{ github.event.inputs.env || 'qa' }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Run Tests
+        working-directory: ${{ env.WORKING_DIR }}
+        env:
+          RB_QA_USERNAME:   ${{ secrets.RB_QA_USERNAME }}
+          RB_QA_PASSWORD:   ${{ secrets.RB_QA_PASSWORD }}
+          RB_QA_BASIC_AUTH: ${{ secrets.RB_QA_BASIC_AUTH }}
+        run: |
+          SUITE="${{ github.event.inputs.suite || 'regression' }}"
+          ENV="${{ github.event.inputs.env || 'qa' }}"
+          mvn clean test \
+            -Denv="${ENV}" \
+            -DsuiteXmlFile="testsuites/${SUITE}.xml" \
+            --no-transfer-progress
+
+      - name: Upload Extent Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: extent-report-${{ github.run_number }}
+          path: ${{ env.WORKING_DIR }}/target/extent-report/
+          retention-days: 30
+
+      - name: Upload Surefire Reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-reports-${{ github.run_number }}
+          path: ${{ env.WORKING_DIR }}/target/surefire-reports/
+          retention-days: 14
+
+      - name: Publish Test Results
+        if: always()
+        uses: dorny/test-reporter@v1
+        with:
+          name: TestNG Results
+          path: ${{ env.WORKING_DIR }}/target/surefire-reports/TEST-*.xml
+          reporter: java-junit
+          fail-on-error: false

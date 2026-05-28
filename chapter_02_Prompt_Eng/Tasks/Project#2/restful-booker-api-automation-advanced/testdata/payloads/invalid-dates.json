@@ -1,0 +1,10 @@
+{
+  "firstname": "Jim",
+  "lastname": "Brown",
+  "totalprice": 111,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "not-a-date",
+    "checkout": "also-not-a-date"
+  }
+}

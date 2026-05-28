@@ -1,0 +1,65 @@
+pipeline {
+    agent any
+
+    parameters {
+        choice(name: 'ENV',   choices: ['qa', 'stage', 'prod'], description: 'Target environment')
+        choice(name: 'SUITE', choices: ['regression', 'smoke', 'sanity', 'e2e'], description: 'TestNG suite to run')
+        string(name: 'THREAD_COUNT', defaultValue: '4', description: 'Parallel thread count')
+    }
+
+    environment {
+        JAVA_HOME       = tool name: 'JDK17', type: 'jdk'
+        MAVEN_HOME      = tool name: 'Maven3', type: 'maven'
+        PATH            = "${JAVA_HOME}/bin:${MAVEN_HOME}/bin:${env.PATH}"
+        RB_QA_USERNAME  = credentials('RB_QA_USERNAME')
+        RB_QA_PASSWORD  = credentials('RB_QA_PASSWORD')
+        RB_QA_BASIC_AUTH= credentials('RB_QA_BASIC_AUTH')
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build & Test') {
+            steps {
+                dir('Chapter_02_Prompt_Eng/Tasks/Project#2/restful-booker-api-automation-Sample2') {
+                    sh """
+                        mvn clean test \
+                            -Denv=${params.ENV} \
+                            -Dsuite=${params.SUITE} \
+                            -Dparallel.thread.count=${params.THREAD_COUNT} \
+                            -DsuiteXmlFile=testsuites/${params.SUITE}.xml \
+                            --no-transfer-progress
+                    """
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            dir('Chapter_02_Prompt_Eng/Tasks/Project#2/restful-booker-api-automation-Sample2') {
+                publishHTML(target: [
+                    allowMissing         : true,
+                    alwaysLinkToLastBuild: true,
+                    keepAll              : true,
+                    reportDir            : 'target/extent-report',
+                    reportFiles          : 'index.html',
+                    reportName           : 'Extent Report'
+                ])
+                archiveArtifacts artifacts: 'target/extent-report/**', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'target/surefire-reports/**', allowEmptyArchive: true
+            }
+        }
+        failure {
+            emailext(
+                subject: "FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER} [${params.ENV}]",
+                body: "Build failed. Check ${env.BUILD_URL} for details.",
+                recipientProviders: [[$class: 'DevelopersRecipientProvider']]
+            )
+        }
+    }
+}

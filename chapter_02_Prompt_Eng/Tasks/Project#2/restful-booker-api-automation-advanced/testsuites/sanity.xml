@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Sanity Suite" verbose="1" parallel="methods" thread-count="3">
+
+    <listeners>
+        <listener class-name="com.restfulbooker.api.listeners.ExtentTestNGListener"/>
+        <listener class-name="com.restfulbooker.api.listeners.RetryListener"/>
+    </listeners>
+
+    <test name="Sanity — Auth">
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="contract"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.restfulbooker.api.tests.smoke.PingTests"/>
+            <class name="com.restfulbooker.api.tests.smoke.AuthSmokeTests"/>
+            <class name="com.restfulbooker.api.tests.contract.BookingContractTests"/>
+        </classes>
+    </test>
+
+</suite>

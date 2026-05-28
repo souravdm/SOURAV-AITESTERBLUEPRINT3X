@@ -1,0 +1,18 @@
+# run-config.yaml — edit before each run, then execute:
+#   mvn clean test -Prun-config -Denv=<env>
+# OR run: ./scripts/run.sh
+
+environment: qa
+parallel: methods
+threadCount: 4
+retryCount: 1
+includeGroups:
+  - smoke
+  - regression
+excludeGroups:
+  - wip
+  - flaky
+# includeTestIds: []   # optional: uncomment to filter by TC ID (e.g. TC_AUTH_001)
+listeners:
+  - com.restfulbooker.api.listeners.ExtentTestNGListener
+  - com.restfulbooker.api.listeners.RetryListener
