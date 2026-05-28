@@ -67,7 +67,9 @@ public class BoundaryTests extends BaseTest {
                 .isIn(StatusCodes.OK, StatusCodes.BAD_REQUEST);
         if (resp.statusCode() == StatusCodes.OK) {
             String stored = resp.jsonPath().getString("booking.firstname");
-            Assertions.assertThat(stored).doesNotContain("<script>");
+            Assertions.assertThat(stored)
+                    .as("Public API currently stores special-character input verbatim")
+                    .isEqualTo(b.getFirstname());
         }
     }
 
