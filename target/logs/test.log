@@ -1,0 +1,1158 @@
+2026-05-28 19:23:17.220 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project#2/restful-booker-api-automation-advanced/testsuites/smoke.xml
+
+2026-05-28 19:23:17.224 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/framework.properties
+2026-05-28 19:23:17.225 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/qa.properties
+2026-05-28 19:23:17.225 [main] INFO  com.restfulbooker.api.config.ConfigManager - ConfigManager initialised — env=qa
+2026-05-28 19:23:17.354 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports initialised — output: target/extent-report/index.html
+2026-05-28 19:23:17.544 [main] INFO  com.restfulbooker.api.tests.base.BaseTest - Suite starting — env=qa baseURI=https://restful-booker.herokuapp.com
+2026-05-28 19:23:17.546 [main] INFO  com.restfulbooker.api.auth.TokenManager - TokenManager using strategy=COOKIE_TOKEN
+2026-05-28 19:23:17.547 [main] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:23:17.547 [main] WARN  com.restfulbooker.api.tests.base.BaseTest - Token pre-warm failed (tests requiring auth may fail): Required config key missing: auth.username — check config/qa.properties or environment variables
+2026-05-28 19:23:22.008 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
+2026-05-28 19:23:22.019 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
+2026-05-28 19:25:31.547 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project#2/restful-booker-api-automation-advanced/testsuites/sanity.xml
+
+2026-05-28 19:25:31.552 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/framework.properties
+2026-05-28 19:25:31.553 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/qa.properties
+2026-05-28 19:25:31.553 [main] INFO  com.restfulbooker.api.config.ConfigManager - ConfigManager initialised — env=qa
+2026-05-28 19:25:31.696 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports initialised — output: target/extent-report/index.html
+2026-05-28 19:25:31.913 [main] INFO  com.restfulbooker.api.tests.base.BaseTest - Suite starting — env=qa baseURI=https://restful-booker.herokuapp.com
+2026-05-28 19:25:31.915 [main] INFO  com.restfulbooker.api.auth.TokenManager - TokenManager using strategy=COOKIE_TOKEN
+2026-05-28 19:25:31.915 [main] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:25:31.915 [main] WARN  com.restfulbooker.api.tests.base.BaseTest - Token pre-warm failed (tests requiring auth may fail): Required config key missing: auth.username — check config/qa.properties or environment variables
+2026-05-28 19:25:35.332 [TestNG-test-Sanity — Auth-2] INFO  com.restfulbooker.api.tests.base.BaseTest - ContractTests: created bookingId=2534
+2026-05-28 19:25:36.868 [TestNG-test-Sanity — Auth-2] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/create-booking-response-schema.json
+2026-05-28 19:25:36.932 [TestNG-test-Sanity — Auth-1] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/booking-response-schema.json
+2026-05-28 19:25:38.489 [TestNG-test-Sanity — Auth-1] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/booking-ids-response-schema.json
+2026-05-28 19:25:39.580 [TestNG-test-Sanity — Auth-2] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/auth-response-schema.json
+2026-05-28 19:25:40.822 [TestNG-test-Sanity — Auth-2] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:25:41.010 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
+2026-05-28 19:25:41.023 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
+2026-05-28 19:28:57.674 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project#2/restful-booker-api-automation-advanced/testsuites/sanity.xml
+
+2026-05-28 19:28:57.679 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/framework.properties
+2026-05-28 19:28:57.680 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/qa.properties
+2026-05-28 19:28:57.681 [main] INFO  com.restfulbooker.api.config.ConfigManager - ConfigManager initialised — env=qa
+2026-05-28 19:28:57.822 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports initialised — output: target/extent-report/index.html
+2026-05-28 19:28:58.396 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
+2026-05-28 19:28:58.412 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
+2026-05-28 19:34:11.675 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project#2/restful-booker-api-automation-advanced/testsuites/sanity.xml
+
+2026-05-28 19:34:11.680 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/framework.properties
+2026-05-28 19:34:11.681 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/qa.properties
+2026-05-28 19:34:11.682 [main] INFO  com.restfulbooker.api.config.ConfigManager - ConfigManager initialised — env=qa
+2026-05-28 19:34:11.816 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports initialised — output: target/extent-report/index.html
+2026-05-28 19:34:12.014 [main] INFO  com.restfulbooker.api.tests.base.BaseTest - Suite starting — env=qa baseURI=https://restful-booker.herokuapp.com
+2026-05-28 19:34:12.016 [main] INFO  com.restfulbooker.api.auth.TokenManager - TokenManager using strategy=COOKIE_TOKEN
+2026-05-28 19:34:12.016 [main] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:34:12.016 [main] WARN  com.restfulbooker.api.tests.base.BaseTest - Token pre-warm failed (tests requiring auth may fail): Required config key missing: auth.username — check config/qa.properties or environment variables
+2026-05-28 19:34:15.384 [TestNG-test-Sanity — Auth-1] INFO  com.restfulbooker.api.tests.base.BaseTest - ContractTests: created bookingId=1524
+2026-05-28 19:34:16.897 [TestNG-test-Sanity — Auth-1] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/create-booking-response-schema.json
+2026-05-28 19:34:16.949 [TestNG-test-Sanity — Auth-2] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/booking-response-schema.json
+2026-05-28 19:34:18.571 [TestNG-test-Sanity — Auth-2] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/booking-ids-response-schema.json
+2026-05-28 19:34:19.345 [TestNG-test-Sanity — Auth-1] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/auth-response-schema.json
+2026-05-28 19:34:20.688 [TestNG-test-Sanity — Auth-1] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:34:20.871 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
+2026-05-28 19:34:20.885 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
+2026-05-28 19:38:55.934 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project#2/restful-booker-api-automation-advanced/testsuites/sanity.xml
+
+2026-05-28 19:38:55.939 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/framework.properties
+2026-05-28 19:38:55.940 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/qa.properties
+2026-05-28 19:38:55.941 [main] INFO  com.restfulbooker.api.config.ConfigManager - ConfigManager initialised — env=qa
+2026-05-28 19:38:56.109 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports initialised — output: target/extent-report/index.html
+2026-05-28 19:38:56.323 [main] INFO  com.restfulbooker.api.tests.base.BaseTest - Suite starting — env=qa baseURI=https://restful-booker.herokuapp.com
+2026-05-28 19:38:56.325 [main] INFO  com.restfulbooker.api.auth.TokenManager - TokenManager using strategy=COOKIE_TOKEN
+2026-05-28 19:38:56.325 [main] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:38:56.325 [main] WARN  com.restfulbooker.api.tests.base.BaseTest - Token pre-warm failed (tests requiring auth may fail): Required config key missing: auth.username — check config/qa.properties or environment variables
+2026-05-28 19:38:59.593 [TestNG-test-Sanity — Auth-1] INFO  com.restfulbooker.api.tests.base.BaseTest - ContractTests: created bookingId=3993
+2026-05-28 19:39:01.054 [TestNG-test-Sanity — Auth-1] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/create-booking-response-schema.json
+2026-05-28 19:39:01.330 [TestNG-test-Sanity — Auth-2] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/booking-response-schema.json
+2026-05-28 19:39:03.068 [TestNG-test-Sanity — Auth-2] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/booking-ids-response-schema.json
+2026-05-28 19:39:03.516 [TestNG-test-Sanity — Auth-1] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/auth-response-schema.json
+2026-05-28 19:39:04.856 [TestNG-test-Sanity — Auth-1] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:39:05.039 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
+2026-05-28 19:39:05.052 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
+2026-05-28 19:44:53.581 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project#2/restful-booker-api-automation-advanced/testsuites/regression.xml
+
+2026-05-28 19:44:53.586 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/framework.properties
+2026-05-28 19:44:53.586 [main] WARN  com.restfulbooker.api.config.ConfigManager - Config file not found on classpath: config/qa.properties
+2026-05-28 19:44:53.587 [main] INFO  com.restfulbooker.api.config.ConfigManager - ConfigManager initialised — env=qa
+2026-05-28 19:44:53.686 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports initialised — output: target/extent-report/index.html
+2026-05-28 19:44:53.864 [main] INFO  com.restfulbooker.api.tests.base.BaseTest - Suite starting — env=qa baseURI=https://restful-booker.herokuapp.com
+2026-05-28 19:44:53.866 [main] INFO  com.restfulbooker.api.auth.TokenManager - TokenManager using strategy=COOKIE_TOKEN
+2026-05-28 19:44:53.866 [main] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:44:53.867 [main] WARN  com.restfulbooker.api.tests.base.BaseTest - Token pre-warm failed (tests requiring auth may fail): Required config key missing: auth.username — check config/qa.properties or environment variables
+2026-05-28 19:44:57.931 [TestNG-test-Regression — Auth-1] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.tests.regression.AuthTests.tc_auth_001_validCredentialsReturnToken(AuthTests.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:13.238 [TestNG-test-Regression — Auth-1] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/auth-response-schema.json
+2026-05-28 19:45:14.488 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.tests.base.BaseTest - UpdateBookingTests: created bookingId=2604
+2026-05-28 19:45:14.490 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:14.491 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:14.492 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.updateBookingWithCookie(BookingClient.java:147)
+	at com.restfulbooker.api.tests.regression.UpdateBookingTests.tc_ub_001_validUpdateWithCookieReturns200(UpdateBookingTests.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:14.496 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: basic.auth.header — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.TokenManager.getBasicAuthHeader(TokenManager.java:58)
+	at com.restfulbooker.api.clients.BookingClient.updateBookingWithBasicAuth(BookingClient.java:157)
+	at com.restfulbooker.api.tests.regression.UpdateBookingTests.tc_ub_002_validUpdateWithBasicAuthReturns200(UpdateBookingTests.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:14.499 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:14.500 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:14.501 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.updateBookingWithCookie(BookingClient.java:147)
+	at com.restfulbooker.api.tests.regression.UpdateBookingTests.tc_ub_003_responseBodyReflectsUpdate(UpdateBookingTests.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:14.504 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:14.505 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:14.506 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.updateBookingWithCookie(BookingClient.java:147)
+	at com.restfulbooker.api.tests.regression.UpdateBookingTests.tc_ub_004_schemaValidation(UpdateBookingTests.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:14.936 [TestNG-test-Regression — Booking CRUD-1] INFO  com.restfulbooker.api.tests.base.BaseTest - Seed booking created with id=2618
+2026-05-28 19:45:16.382 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.tests.base.BaseTest - PatchBookingTests: created bookingId=2652
+2026-05-28 19:45:16.383 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:16.383 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:16.384 [TestNG-test-Regression — Booking CRUD-4] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.patchBookingWithCookie(BookingClient.java:208)
+	at com.restfulbooker.api.tests.regression.PatchBookingTests.tc_pb_001_patchFirstnameWithCookieReturns200(PatchBookingTests.java:47)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:16.386 [TestNG-test-Regression — Booking CRUD-4] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: basic.auth.header — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.TokenManager.getBasicAuthHeader(TokenManager.java:58)
+	at com.restfulbooker.api.clients.BookingClient.patchBookingWithBasicAuth(BookingClient.java:218)
+	at com.restfulbooker.api.tests.regression.PatchBookingTests.tc_pb_002_patchLastnameWithBasicAuthReturns200(PatchBookingTests.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:16.388 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:16.388 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:16.389 [TestNG-test-Regression — Booking CRUD-4] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.updateBookingWithCookie(BookingClient.java:147)
+	at com.restfulbooker.api.tests.regression.PatchBookingTests.tc_pb_003_patchTotalpriceOtherFieldsUnchanged(PatchBookingTests.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:16.390 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:16.391 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:16.392 [TestNG-test-Regression — Booking CRUD-4] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.patchBookingWithCookie(BookingClient.java:208)
+	at com.restfulbooker.api.tests.regression.PatchBookingTests.tc_pb_004_patchDepositpaid(PatchBookingTests.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:16.394 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:16.395 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:16.396 [TestNG-test-Regression — Booking CRUD-4] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.patchBookingWithCookie(BookingClient.java:208)
+	at com.restfulbooker.api.tests.regression.PatchBookingTests.tc_pb_005_patchCheckinDate(PatchBookingTests.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:16.398 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:16.398 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:16.399 [TestNG-test-Regression — Booking CRUD-4] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.patchBookingWithCookie(BookingClient.java:208)
+	at com.restfulbooker.api.tests.regression.PatchBookingTests.tc_pb_006_schemaValidation(PatchBookingTests.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:17.396 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:17.397 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:17.398 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.updateBookingWithCookie(BookingClient.java:147)
+	at com.restfulbooker.api.tests.regression.UpdateBookingTests.tc_ub_007_nonExistentIdReturns405Or404(UpdateBookingTests.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:17.399 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:17.400 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:17.401 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.updateBookingRawWithCookie(BookingClient.java:186)
+	at com.restfulbooker.api.tests.regression.UpdateBookingTests.tc_ub_008_emptyBodyReturnsError(UpdateBookingTests.java:125)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:17.403 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:17.404 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:17.405 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.updateBookingWithCookie(BookingClient.java:147)
+	at com.restfulbooker.api.tests.regression.UpdateBookingTests.tc_ub_009_missingFirstname(UpdateBookingTests.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:17.408 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:17.410 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:17.410 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.updateBookingWithCookie(BookingClient.java:147)
+	at com.restfulbooker.api.tests.regression.UpdateBookingTests.tc_ub_010_veryLongFirstname(UpdateBookingTests.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:17.412 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:17.413 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:17.414 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.updateBookingWithCookie(BookingClient.java:147)
+	at com.restfulbooker.api.tests.regression.UpdateBookingTests.tc_ub_011_updatePersistedOnGet(UpdateBookingTests.java:161)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:17.416 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:17.417 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:17.418 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.updateBookingWithCookie(BookingClient.java:147)
+	at com.restfulbooker.api.tests.regression.UpdateBookingTests.tc_ub_012_responseTimeWithinSla(UpdateBookingTests.java:176)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:17.419 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:17.467 [TestNG-test-Regression — Booking CRUD-2] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/create-booking-response-schema.json
+2026-05-28 19:45:18.602 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:19.681 [TestNG-test-Regression — Booking CRUD-1] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/booking-response-schema.json
+2026-05-28 19:45:19.692 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:19.693 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:19.693 [TestNG-test-Regression — Booking CRUD-4] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.patchBookingWithCookie(BookingClient.java:208)
+	at com.restfulbooker.api.tests.regression.PatchBookingTests.tc_pb_009_nonExistentIdReturns405Or404(PatchBookingTests.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:19.694 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:19.695 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:19.695 [TestNG-test-Regression — Booking CRUD-4] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.patchBookingWithCookie(BookingClient.java:208)
+	at com.restfulbooker.api.tests.regression.PatchBookingTests.tc_pb_010_patchPersistedOnGet(PatchBookingTests.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:19.697 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:19.697 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:19.698 [TestNG-test-Regression — Booking CRUD-4] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.patchBookingWithCookie(BookingClient.java:208)
+	at com.restfulbooker.api.tests.regression.PatchBookingTests.tc_pb_011_responseTimeWithinSla(PatchBookingTests.java:161)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:19.699 [TestNG-test-Regression — Booking CRUD-4] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:19.952 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:19.952 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.deleteBookingWithCookie(BookingClient.java:249)
+	at com.restfulbooker.api.tests.regression.DeleteBookingTests.tc_db_001_deleteWithCookieReturns201(DeleteBookingTests.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:22.583 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: basic.auth.header — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.TokenManager.getBasicAuthHeader(TokenManager.java:58)
+	at com.restfulbooker.api.clients.BookingClient.deleteBookingWithBasicAuth(BookingClient.java:257)
+	at com.restfulbooker.api.tests.regression.DeleteBookingTests.tc_db_002_deleteWithBasicAuthReturns201(DeleteBookingTests.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:23.946 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:25.194 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:25.195 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.deleteBookingWithCookie(BookingClient.java:249)
+	at com.restfulbooker.api.tests.regression.DeleteBookingTests.tc_db_003_deletedBookingNotFoundOnGet(DeleteBookingTests.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:28.048 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:30.435 [TestNG-test-Regression — Booking CRUD-2] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+java.lang.AssertionError: 
+Expecting actual:
+  200
+to be in:
+  [400, 500]
+
+	at com.restfulbooker.api.tests.regression.CreateBookingTests.tc_cb_011_totalpriceAsString(CreateBookingTests.java:165)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:30.668 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:30.668 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.deleteBookingWithCookie(BookingClient.java:249)
+	at com.restfulbooker.api.tests.regression.DeleteBookingTests.tc_db_004_noAuthReturns403(DeleteBookingTests.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:33.282 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:35.927 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:35.928 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.deleteBookingWithCookie(BookingClient.java:249)
+	at com.restfulbooker.api.tests.regression.DeleteBookingTests.tc_db_005_invalidTokenReturns403(DeleteBookingTests.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:35.932 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:35.934 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:35.936 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.deleteBookingWithCookie(BookingClient.java:249)
+	at com.restfulbooker.api.tests.regression.DeleteBookingTests.tc_db_006_nonExistentIdReturns405(DeleteBookingTests.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:37.256 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:38.017 [TestNG-test-Regression — Booking CRUD-2] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+java.lang.AssertionError: 
+Expecting actual:
+  200
+to be in:
+  [400, 500]
+
+	at com.restfulbooker.api.tests.regression.CreateBookingTests.tc_cb_016_invalidDateFormat(CreateBookingTests.java:227)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:38.537 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:38.538 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.deleteBookingWithCookie(BookingClient.java:249)
+	at com.restfulbooker.api.tests.regression.DeleteBookingTests.tc_db_007_deleteTwiceReturns405(DeleteBookingTests.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:38.826 [TestNG-test-Regression — Booking CRUD-1] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+java.lang.AssertionError: 
+Expecting ArrayList:
+  [159,
+    161,
+    163,
+    684,
+    685,
+    711,
+    713,
+    735,
+    737,
+    756,
+    757,
+    793,
+    794,
+    821,
+    824,
+    842,
+    845,
+    872,
+    876,
+    897,
+    901,
+    1674,
+    1701,
+    1705,
+    1725,
+    1727,
+    1756,
+    1757,
+    1783,
+    1787,
+    2230,
+    2253,
+    2268,
+    3103]
+to contain:
+  [2618]
+but could not find the following element(s):
+  [2618]
+
+	at com.restfulbooker.api.tests.regression.BookingGetTests.tc_gbi_006_filterByCheckin(BookingGetTests.java:120)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:39.853 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:41.199 [TestNG-test-Regression — Booking CRUD-3] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:41.200 [TestNG-test-Regression — Booking CRUD-3] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+com.restfulbooker.api.exceptions.ConfigException: Required config key missing: auth.username — check config/qa.properties or environment variables
+	at com.restfulbooker.api.config.ConfigManager.getRequired(ConfigManager.java:57)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.refresh(CookieTokenStrategy.java:43)
+	at com.restfulbooker.api.auth.CookieTokenStrategy.getToken(CookieTokenStrategy.java:32)
+	at com.restfulbooker.api.auth.TokenManager.getToken(TokenManager.java:43)
+	at com.restfulbooker.api.auth.TokenManager.getCookieHeader(TokenManager.java:53)
+	at com.restfulbooker.api.clients.BookingClient.deleteBookingWithCookie(BookingClient.java:249)
+	at com.restfulbooker.api.tests.regression.DeleteBookingTests.tc_db_008_responseTimeWithinSla(DeleteBookingTests.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:43.290 [TestNG-test-Regression — Booking CRUD-1] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/booking-ids-response-schema.json
+2026-05-28 19:45:50.684 [TestNG-test-Regression — Booking CRUD-1] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+java.lang.AssertionError: [Invalid checkin=not-a-date should return 200 (empty) or 400] 
+Expecting actual:
+  500
+to be in:
+  [200, 400]
+
+	at com.restfulbooker.api.tests.regression.BookingGetTests.tc_gbi_neg_invalidDateFilter(BookingGetTests.java:333)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:53.272 [TestNG-test-Regression — Booking CRUD-1] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+java.lang.AssertionError: [Invalid checkout=32-13-2099 should return 200 (empty) or 400] 
+Expecting actual:
+  500
+to be in:
+  [200, 400]
+
+	at com.restfulbooker.api.tests.regression.BookingGetTests.tc_gbi_neg_invalidDateFilter(BookingGetTests.java:333)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:45:53.273 [TestNG-test-Regression — Booking CRUD-1] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:45:59.812 [TestNG-test-Regression — Boundary & Negative-1] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+java.lang.AssertionError: 
+Expecting actual:
+  "<script>alert(1)</script>"
+not to contain:
+  "<script>"
+
+	at com.restfulbooker.api.tests.negative.BoundaryTests.tc_bnd_004_specialCharsFirstname(BoundaryTests.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:46:12.908 [TestNG-test-Regression — Boundary & Negative-1] ERROR com.restfulbooker.api.reporting.ExtentTestManager - Test failed
+java.lang.IllegalArgumentException: Cannot serialize because cannot determine how to serialize content-type text/plain
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.mapping.ObjectMapping.serialize(ObjectMapping.groovy:180)
+	at io.restassured.internal.mapping.ObjectMapping$serialize.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.body(RequestSpecificationImpl.groovy:770)
+	at com.restfulbooker.api.clients.BookingClient.createBookingWithContentType(BookingClient.java:121)
+	at com.restfulbooker.api.tests.negative.BoundaryTests.tc_bnd_011_wrongContentType(BoundaryTests.java:169)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-05-28 19:46:16.818 [TestNG-test-Regression — Contract-1] INFO  com.restfulbooker.api.tests.base.BaseTest - ContractTests: created bookingId=4088
+2026-05-28 19:46:18.221 [TestNG-test-Regression — Contract-1] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/create-booking-response-schema.json
+2026-05-28 19:46:20.764 [TestNG-test-Regression — Contract-1] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/booking-response-schema.json
+2026-05-28 19:46:25.006 [TestNG-test-Regression — Contract-1] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/booking-ids-response-schema.json
+2026-05-28 19:46:27.844 [TestNG-test-Regression — Contract-1] DEBUG com.restfulbooker.api.utils.AssertionHelper - JSON schema validation passed: testdata/schemas/auth-response-schema.json
+2026-05-28 19:46:30.430 [TestNG-test-Regression — Contract-1] INFO  com.restfulbooker.api.auth.CookieTokenStrategy - Refreshing Cookie token for env=qa
+2026-05-28 19:46:30.673 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
+2026-05-28 19:46:30.709 [main] INFO  com.restfulbooker.api.reporting.ExtentManager - ExtentReports flushed
