@@ -13,6 +13,13 @@
     <name>Restful-Booker API Automation Framework</name>
     <description>Production-grade REST Assured + TestNG framework for Restful-Booker API</description>
 
+<configuration>
+  <release>${java.version}</release>
+  <annotationProcessorPaths>
+    ...
+  </annotationProcessorPaths>
+</configuration>
+
     <properties>
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
