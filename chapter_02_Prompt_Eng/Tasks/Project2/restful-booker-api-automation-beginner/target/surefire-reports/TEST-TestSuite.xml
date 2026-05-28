@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="19.848" tests="12" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="surefire.suiteXmlFiles" value="testng.xml"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project2/restful-booker-api-automation-beginner/target/test-classes:/Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project2/restful-booker-api-automation-beginner/target/classes:/Users/souravmahapatra/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/souravmahapatra/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/souravmahapatra/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/souravmahapatra/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/souravmahapatra/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/souravmahapatra/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/souravmahapatra/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/souravmahapatra/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/souravmahapatra/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/souravmahapatra/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/souravmahapatra/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/souravmahapatra/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/souravmahapatra/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/souravmahapatra/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/souravmahapatra/.m2/repository/io/rest-assured/json-schema-validator/5.4.0/json-schema-validator-5.4.0.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/souravmahapatra/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/souravmahapatra/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/souravmahapatra/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/souravmahapatra/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/souravmahapatra/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/souravmahapatra/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/souravmahapatra/.m2/repository/com/google/guava/guava/32.0.1-jre/guava-32.0.1-jre.jar:/Users/souravmahapatra/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/souravmahapatra/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/souravmahapatra/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/souravmahapatra/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/souravmahapatra/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/souravmahapatra/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/souravmahapatra/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/souravmahapatra/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/souravmahapatra/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/souravmahapatra/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/souravmahapatra/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/souravmahapatra/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/souravmahapatra/.m2/repository/io/qameta/allure/allure-testng/2.27.0/allure-testng-2.27.0.jar:/Users/souravmahapatra/.m2/repository/io/qameta/allure/allure-java-commons/2.27.0/allure-java-commons-2.27.0.jar:/Users/souravmahapatra/.m2/repository/io/qameta/allure/allure-model/2.27.0/allure-model-2.27.0.jar:/Users/souravmahapatra/.m2/repository/io/qameta/allure/allure-test-filter/2.27.0/allure-test-filter-2.27.0.jar:/Users/souravmahapatra/.m2/repository/io/qameta/allure/allure-rest-assured/2.27.0/allure-rest-assured-2.27.0.jar:/Users/souravmahapatra/.m2/repository/io/qameta/allure/allure-attachments/2.27.0/allure-attachments-2.27.0.jar:/Users/souravmahapatra/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/souravmahapatra/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/souravmahapatra/.m2/repository/org/apache/logging/log4j/log4j-core/2.23.1/log4j-core-2.23.1.jar:/Users/souravmahapatra/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@17/17.0.19/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project2/restful-booker-api-automation-beginner/target/surefire/surefirebooter-20260529033331104_3.jar /Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project2/restful-booker-api-automation-beginner/target/surefire 2026-05-29T03-33-31_053-jvmRun1 surefire-20260529033331104_1tmp surefire_0-20260529033331104_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project2/restful-booker-api-automation-beginner/target/test-classes:/Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project2/restful-booker-api-automation-beginner/target/classes:/Users/souravmahapatra/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/Users/souravmahapatra/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/Users/souravmahapatra/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/Users/souravmahapatra/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/souravmahapatra/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/souravmahapatra/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/souravmahapatra/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/souravmahapatra/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/souravmahapatra/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/souravmahapatra/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/Users/souravmahapatra/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/Users/souravmahapatra/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/Users/souravmahapatra/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/Users/souravmahapatra/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/souravmahapatra/.m2/repository/io/rest-assured/json-schema-validator/5.4.0/json-schema-validator-5.4.0.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/souravmahapatra/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/souravmahapatra/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/souravmahapatra/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/souravmahapatra/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/souravmahapatra/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/souravmahapatra/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/souravmahapatra/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/souravmahapatra/.m2/repository/com/google/guava/guava/32.0.1-jre/guava-32.0.1-jre.jar:/Users/souravmahapatra/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/souravmahapatra/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/souravmahapatra/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/souravmahapatra/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/souravmahapatra/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/souravmahapatra/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/souravmahapatra/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/souravmahapatra/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/souravmahapatra/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/souravmahapatra/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/Users/souravmahapatra/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/Users/souravmahapatra/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/Users/souravmahapatra/.m2/repository/io/qameta/allure/allure-testng/2.27.0/allure-testng-2.27.0.jar:/Users/souravmahapatra/.m2/repository/io/qameta/allure/allure-java-commons/2.27.0/allure-java-commons-2.27.0.jar:/Users/souravmahapatra/.m2/repository/io/qameta/allure/allure-model/2.27.0/allure-model-2.27.0.jar:/Users/souravmahapatra/.m2/repository/io/qameta/allure/allure-test-filter/2.27.0/allure-test-filter-2.27.0.jar:/Users/souravmahapatra/.m2/repository/io/qameta/allure/allure-rest-assured/2.27.0/allure-rest-assured-2.27.0.jar:/Users/souravmahapatra/.m2/repository/io/qameta/allure/allure-attachments/2.27.0/allure-attachments-2.27.0.jar:/Users/souravmahapatra/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/souravmahapatra/.m2/repository/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar:/Users/souravmahapatra/.m2/repository/org/apache/logging/log4j/log4j-core/2.23.1/log4j-core-2.23.1.jar:/Users/souravmahapatra/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
+    <property name="allure.results.directory" value="/Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project2/restful-booker-api-automation-beginner/target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/souravmahapatra"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk@17/17.0.19/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project2/restful-booker-api-automation-beginner"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project2/restful-booker-api-automation-beginner/target/surefire/surefirebooter-20260529033331104_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.19+0"/>
+    <property name="user.name" value="souravmahapatra"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/souravmahapatra/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/sn/jlls81zs47zbkf79z97kpwgm0000gn/T/"/>
+    <property name="java.version" value="17.0.19"/>
+    <property name="user.dir" value="/Users/souravmahapatra/IdeaProjects/SOURAV-AITESTERBLUEPRINT3X/SOURAV-AITESTERBLUEPRINT3X/chapter_02_Prompt_Eng/Tasks/Project2/restful-booker-api-automation-beginner"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/souravmahapatra/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="17.0.19+0"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="ping_delete_invalidMethodReturnsNon201" classname="com.restfulbooker.automation.tests.PingTests" time="2.624">
+    <system-out><![CDATA[...
+... TestNG 7.10.2 by Cédric Beust (cedric@beust.com)
+...
+
+2026-05-29 03:33:32.587 [main] INFO  com.restfulbooker.automation.config.ConfigManager — Configuration loaded from classpath:config.properties
+2026-05-29 03:33:32.659 [main] INFO  com.restfulbooker.automation.tests.BaseTest — ╔══════════════════════════════════════════════════════╗
+2026-05-29 03:33:32.660 [main] INFO  com.restfulbooker.automation.tests.BaseTest — ║  Restful Booker API Automation Suite — START         ║
+2026-05-29 03:33:32.660 [main] INFO  com.restfulbooker.automation.tests.BaseTest — ╚══════════════════════════════════════════════════════╝
+2026-05-29 03:33:32.660 [main] INFO  com.restfulbooker.automation.tests.BaseTest —   Base URI  : https://restful-booker.herokuapp.com
+2026-05-29 03:33:32.660 [main] INFO  com.restfulbooker.automation.tests.BaseTest —   SLA (ms)  : 2000
+2026-05-29 03:33:32.660 [main] INFO  com.restfulbooker.automation.tests.BaseTest —   Log Req   : true
+2026-05-29 03:33:32.660 [main] INFO  com.restfulbooker.automation.tests.BaseTest —   Log Resp  : true
+2026-05-29 03:33:32.661 [main] INFO  com.restfulbooker.automation.tests.BaseTest — Configuration validated — suite is safe to proceed.
+2026-05-29 03:33:32.787 [main] DEBUG com.restfulbooker.automation.utils.JsonUtils — Deserialising classpath resource 'testdata/ping.json' (generic)
+2026-05-29 03:33:32.820 [main] INFO  com.restfulbooker.automation.tests.BaseTest — Loaded ping test data: {_comment=Test data for GET /ping. All values are derived from the Restful Booker API spec., _specReference=https://restful-booker.herokuapp.com/apidoc/index.html#api-Ping-Ping, endpoint=/ping, method=GET, expectedStatusCode=201, expectedBody=Created, expectedContentType=text/plain, slaMs=2000, description=Health-check endpoint — returns 201 Created with a plain-text body., requirementIds=[REQ-HC-001, REQ-HC-002, REQ-HC-003, REQ-HC-004, REQ-HC-005, REQ-HC-006, REQ-HC-007, REQ-HC-008, REQ-HC-009, REQ-HC-010, REQ-HC-011, REQ-HC-012], notes=[JSON Schema Validator is not applicable for this endpoint — response is text/plain, not JSON., Methods TC-API-005 through TC-API-009 and TC-API-011 are tagged [Inference (low confidence)]., Update expectedStatusCode for invalid-method tests if the live server returns 405 instead of 404.]}
+2026-05-29 03:33:32.821 [main] INFO  com.restfulbooker.automation.tests.BaseTest — Response-time SLA: 2000ms
+2026-05-29 03:33:32.860 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingDelete() → DELETE /ping
+2026-05-29 03:33:32.861 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:33.251 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP DELETE /ping
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/ping
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-05-29 03:33:35.421 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-008] DELETE /ping status: 404
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="ping_get_contentTypeContainsTextPlain" classname="com.restfulbooker.automation.tests.PingTests" time="1.271">
+    <system-out><![CDATA[2026-05-29 03:33:35.466 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:35.467 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:35.467 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:35.468 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/ping
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=text/plain
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-05-29 03:33:36.734 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-003] Content-Type: 'text/plain; charset=utf-8'
+]]></system-out>
+  </testcase>
+  <testcase name="ping_get_responseBodyEqualsCreated" classname="com.restfulbooker.automation.tests.PingTests" time="1.304">
+    <system-out><![CDATA[2026-05-29 03:33:36.737 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:36.738 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:36.738 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:36.739 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/ping
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=text/plain
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-05-29 03:33:38.040 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-002] Body: 'Created'
+]]></system-out>
+  </testcase>
+  <testcase name="ping_get_responseTimeWithinSla" classname="com.restfulbooker.automation.tests.PingTests" time="1.33">
+    <system-out><![CDATA[2026-05-29 03:33:38.046 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:38.047 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:38.047 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:38.048 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/ping
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=text/plain
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-05-29 03:33:39.371 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-004] Response time: 1295ms (SLA: 2000ms)
+]]></system-out>
+  </testcase>
+  <testcase name="ping_get_returns201Created" classname="com.restfulbooker.automation.tests.PingTests" time="1.26">
+    <system-out><![CDATA[2026-05-29 03:33:39.373 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:39.373 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:39.374 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:39.375 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/ping
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=text/plain
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-05-29 03:33:40.629 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-001] Status code: 201
+]]></system-out>
+  </testcase>
+  <testcase name="ping_get_threeConsecutiveHitsAllReturn201" classname="com.restfulbooker.automation.tests.PingTests" time="4.236">
+    <system-out><![CDATA[2026-05-29 03:33:40.636 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:40.636 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:40.637 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:40.639 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/ping
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=text/plain
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-05-29 03:33:41.960 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-010] Hit #1: status=201, body='Created'
+2026-05-29 03:33:41.961 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:41.961 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:41.962 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:41.964 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/ping
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=text/plain
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-05-29 03:33:43.579 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-010] Hit #2: status=201, body='Created'
+2026-05-29 03:33:43.580 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:43.580 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:43.580 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:43.581 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/ping
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=text/plain
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-05-29 03:33:44.868 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-010] Hit #3: status=201, body='Created'
+]]></system-out>
+  </testcase>
+  <testcase name="ping_get_unreachableHost_throwsConnectivityException" classname="com.restfulbooker.automation.tests.PingTests" time="0.041">
+    <failure message="restful-booker-does-not-exist-12345.example.invalid: nodename nor servname provided, or not known" type="java.net.UnknownHostException"><![CDATA[java.net.UnknownHostException: restful-booker-does-not-exist-12345.example.invalid: nodename nor servname provided, or not known
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:263)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:162)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:326)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:141)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
+	at io.restassured.internal.http.HTTPBuilder$request$2.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1480)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$sendHttpRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1229)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.qameta.allure.restassured.AllureRestAssured.filter(AllureRestAssured.java:121)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1334)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1089)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1008)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:791)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:172)
+	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
+	at com.restfulbooker.automation.client.RestClient.get(RestClient.java:32)
+	at com.restfulbooker.automation.services.HealthCheckService.pingUnreachable(HealthCheckService.java:148)
+	at com.restfulbooker.automation.tests.PingTests.ping_get_unreachableHost_throwsConnectivityException(PingTests.java:450)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[2026-05-29 03:33:44.874 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingUnreachable() → GET /ping (base=https://restful-booker-does-not-exist-12345.example.invalid)
+2026-05-29 03:33:44.875 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building unreachable-host RequestSpecification; baseURI=https://restful-booker-does-not-exist-12345.example.invalid
+2026-05-29 03:33:44.875 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+]]></system-out>
+  </testcase>
+  <testcase name="ping_get_withUnrecognisedAcceptHeader_returns201" classname="com.restfulbooker.automation.tests.PingTests" time="1.232">
+    <system-out><![CDATA[2026-05-29 03:33:44.913 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingWithCustomAccept() → GET /ping (Accept: application/vnd.unknown.format+xml;version=99)
+2026-05-29 03:33:44.913 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building custom-accept RequestSpecification; Accept=application/vnd.unknown.format+xml;version=99
+2026-05-29 03:33:44.914 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:44.915 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/ping
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/vnd.unknown.format+xml;version=99
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-05-29 03:33:46.140 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-011] Accept: 'application/vnd.unknown.format+xml;version=99' → status: 201
+]]></system-out>
+  </testcase>
+  <testcase name="ping_head_returns201WithEmptyBody" classname="com.restfulbooker.automation.tests.PingTests" time="1.396">
+    <system-out><![CDATA[2026-05-29 03:33:46.147 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingHead() → HEAD /ping
+2026-05-29 03:33:46.148 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:46.148 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP HEAD   /ping
+Request method:	HEAD
+Request URI:	https://restful-booker.herokuapp.com/ping
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-05-29 03:33:47.539 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-005] HEAD status: 201, body length: 0
+]]></system-out>
+  </testcase>
+  <testcase name="ping_patch_invalidMethodReturnsNon201" classname="com.restfulbooker.automation.tests.PingTests" time="1.264">
+    <system-out><![CDATA[2026-05-29 03:33:47.543 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingPatch() → PATCH /ping
+2026-05-29 03:33:47.544 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:47.544 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP PATCH  /ping
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/ping
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-05-29 03:33:48.805 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-009] PATCH /ping status: 404
+]]></system-out>
+  </testcase>
+  <testcase name="ping_post_invalidMethodReturnsNon201" classname="com.restfulbooker.automation.tests.PingTests" time="1.239">
+    <system-out><![CDATA[2026-05-29 03:33:48.807 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingPost() → POST /ping
+2026-05-29 03:33:48.807 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:48.808 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP POST   /ping
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/ping
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-05-29 03:33:50.041 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-006] POST /ping status: 404
+]]></system-out>
+  </testcase>
+  <testcase name="ping_put_invalidMethodReturnsNon201" classname="com.restfulbooker.automation.tests.PingTests" time="1.351">
+    <system-out><![CDATA[2026-05-29 03:33:50.054 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingPut() → PUT /ping
+2026-05-29 03:33:50.054 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:50.055 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP PUT    /ping
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/ping
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-05-29 03:33:51.395 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-007] PUT /ping status: 404
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,78 @@
+2026-05-29 03:33:32.587 [main] INFO  com.restfulbooker.automation.config.ConfigManager — Configuration loaded from classpath:config.properties
+2026-05-29 03:33:32.659 [main] INFO  com.restfulbooker.automation.tests.BaseTest — ╔══════════════════════════════════════════════════════╗
+2026-05-29 03:33:32.660 [main] INFO  com.restfulbooker.automation.tests.BaseTest — ║  Restful Booker API Automation Suite — START         ║
+2026-05-29 03:33:32.660 [main] INFO  com.restfulbooker.automation.tests.BaseTest — ╚══════════════════════════════════════════════════════╝
+2026-05-29 03:33:32.660 [main] INFO  com.restfulbooker.automation.tests.BaseTest —   Base URI  : https://restful-booker.herokuapp.com
+2026-05-29 03:33:32.660 [main] INFO  com.restfulbooker.automation.tests.BaseTest —   SLA (ms)  : 2000
+2026-05-29 03:33:32.660 [main] INFO  com.restfulbooker.automation.tests.BaseTest —   Log Req   : true
+2026-05-29 03:33:32.660 [main] INFO  com.restfulbooker.automation.tests.BaseTest —   Log Resp  : true
+2026-05-29 03:33:32.661 [main] INFO  com.restfulbooker.automation.tests.BaseTest — Configuration validated — suite is safe to proceed.
+2026-05-29 03:33:32.787 [main] DEBUG com.restfulbooker.automation.utils.JsonUtils — Deserialising classpath resource 'testdata/ping.json' (generic)
+2026-05-29 03:33:32.820 [main] INFO  com.restfulbooker.automation.tests.BaseTest — Loaded ping test data: {_comment=Test data for GET /ping. All values are derived from the Restful Booker API spec., _specReference=https://restful-booker.herokuapp.com/apidoc/index.html#api-Ping-Ping, endpoint=/ping, method=GET, expectedStatusCode=201, expectedBody=Created, expectedContentType=text/plain, slaMs=2000, description=Health-check endpoint — returns 201 Created with a plain-text body., requirementIds=[REQ-HC-001, REQ-HC-002, REQ-HC-003, REQ-HC-004, REQ-HC-005, REQ-HC-006, REQ-HC-007, REQ-HC-008, REQ-HC-009, REQ-HC-010, REQ-HC-011, REQ-HC-012], notes=[JSON Schema Validator is not applicable for this endpoint — response is text/plain, not JSON., Methods TC-API-005 through TC-API-009 and TC-API-011 are tagged [Inference (low confidence)]., Update expectedStatusCode for invalid-method tests if the live server returns 405 instead of 404.]}
+2026-05-29 03:33:32.821 [main] INFO  com.restfulbooker.automation.tests.BaseTest — Response-time SLA: 2000ms
+2026-05-29 03:33:32.860 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingDelete() → DELETE /ping
+2026-05-29 03:33:32.861 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:33.251 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP DELETE /ping
+2026-05-29 03:33:35.421 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-008] DELETE /ping status: 404
+2026-05-29 03:33:35.466 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:35.467 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:35.467 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:35.468 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+2026-05-29 03:33:36.734 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-003] Content-Type: 'text/plain; charset=utf-8'
+2026-05-29 03:33:36.737 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:36.738 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:36.738 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:36.739 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+2026-05-29 03:33:38.040 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-002] Body: 'Created'
+2026-05-29 03:33:38.046 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:38.047 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:38.047 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:38.048 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+2026-05-29 03:33:39.371 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-004] Response time: 1295ms (SLA: 2000ms)
+2026-05-29 03:33:39.373 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:39.373 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:39.374 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:39.375 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+2026-05-29 03:33:40.629 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-001] Status code: 201
+2026-05-29 03:33:40.636 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:40.636 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:40.637 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:40.639 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+2026-05-29 03:33:41.960 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-010] Hit #1: status=201, body='Created'
+2026-05-29 03:33:41.961 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:41.961 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:41.962 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:41.964 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+2026-05-29 03:33:43.579 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-010] Hit #2: status=201, body='Created'
+2026-05-29 03:33:43.580 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.ping() → GET /ping
+2026-05-29 03:33:43.580 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building plain-text RequestSpecification
+2026-05-29 03:33:43.580 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:43.581 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+2026-05-29 03:33:44.868 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-010] Hit #3: status=201, body='Created'
+2026-05-29 03:33:44.874 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingUnreachable() → GET /ping (base=https://restful-booker-does-not-exist-12345.example.invalid)
+2026-05-29 03:33:44.875 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building unreachable-host RequestSpecification; baseURI=https://restful-booker-does-not-exist-12345.example.invalid
+2026-05-29 03:33:44.875 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+2026-05-29 03:33:44.913 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingWithCustomAccept() → GET /ping (Accept: application/vnd.unknown.format+xml;version=99)
+2026-05-29 03:33:44.913 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building custom-accept RequestSpecification; Accept=application/vnd.unknown.format+xml;version=99
+2026-05-29 03:33:44.914 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:44.915 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP GET    /ping
+2026-05-29 03:33:46.140 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-011] Accept: 'application/vnd.unknown.format+xml;version=99' → status: 201
+2026-05-29 03:33:46.147 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingHead() → HEAD /ping
+2026-05-29 03:33:46.148 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:46.148 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP HEAD   /ping
+2026-05-29 03:33:47.539 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-005] HEAD status: 201, body length: 0
+2026-05-29 03:33:47.543 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingPatch() → PATCH /ping
+2026-05-29 03:33:47.544 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:47.544 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP PATCH  /ping
+2026-05-29 03:33:48.805 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-009] PATCH /ping status: 404
+2026-05-29 03:33:48.807 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingPost() → POST /ping
+2026-05-29 03:33:48.807 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:48.808 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP POST   /ping
+2026-05-29 03:33:50.041 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-006] POST /ping status: 404
+2026-05-29 03:33:50.054 [main] INFO  com.restfulbooker.automation.services.HealthCheckService — HealthCheckService.pingPut() → PUT /ping
+2026-05-29 03:33:50.054 [main] DEBUG com.restfulbooker.automation.client.SpecBuilder — Building base RequestSpecification; baseURI=https://restful-booker.herokuapp.com
+2026-05-29 03:33:50.055 [main] DEBUG com.restfulbooker.automation.client.RestClient — HTTP PUT    /ping
+2026-05-29 03:33:51.395 [main] INFO  com.restfulbooker.automation.tests.BaseTest — [TC-API-007] PUT /ping status: 404
+2026-05-29 03:33:51.412 [main] INFO  com.restfulbooker.automation.tests.BaseTest — ╔══════════════════════════════════════════════════════╗
+2026-05-29 03:33:51.412 [main] INFO  com.restfulbooker.automation.tests.BaseTest — ║  Restful Booker API Automation Suite — END           ║
+2026-05-29 03:33:51.412 [main] INFO  com.restfulbooker.automation.tests.BaseTest — ╚══════════════════════════════════════════════════════╝

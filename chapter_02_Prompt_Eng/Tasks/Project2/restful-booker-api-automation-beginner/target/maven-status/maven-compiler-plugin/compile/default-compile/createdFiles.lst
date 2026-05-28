@@ -1,0 +1,12 @@
+com/restfulbooker/automation/utils/JsonUtils$1.class
+com/restfulbooker/automation/models/AuthRequestDto.class
+com/restfulbooker/automation/models/AuthResponseDto.class
+com/restfulbooker/automation/client/SpecBuilder.class
+com/restfulbooker/automation/utils/JsonUtils.class
+com/restfulbooker/automation/services/HealthCheckService.class
+com/restfulbooker/automation/models/BookingDates.class
+com/restfulbooker/automation/client/RestClient.class
+com/restfulbooker/automation/models/BookingDto$Builder.class
+com/restfulbooker/automation/models/BookingDto.class
+com/restfulbooker/automation/models/BookingDates$Builder.class
+com/restfulbooker/automation/config/ConfigManager.class
