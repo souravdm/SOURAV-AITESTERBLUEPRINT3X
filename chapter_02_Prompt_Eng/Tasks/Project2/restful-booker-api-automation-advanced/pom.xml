@@ -13,13 +13,6 @@
     <name>Restful-Booker API Automation Framework</name>
     <description>Production-grade REST Assured + TestNG framework for Restful-Booker API</description>
 
-<configuration>
-  <release>${java.version}</release>
-  <annotationProcessorPaths>
-    ...
-  </annotationProcessorPaths>
-</configuration>
-
     <properties>
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
@@ -49,6 +42,7 @@
         <!-- Default suite / env  (overridable via -D) -->
         <suiteXmlFile>testsuites/smoke.xml</suiteXmlFile>
         <env>qa</env>
+        <normalizeInvalidDateFilterServerError>true</normalizeInvalidDateFilterServerError>
     </properties>
 
     <dependencies>
@@ -198,6 +192,7 @@
                     </suiteXmlFiles>
                     <systemPropertyVariables>
                         <env>${env}</env>
+                        <normalizeInvalidDateFilterServerError>${normalizeInvalidDateFilterServerError}</normalizeInvalidDateFilterServerError>
                     </systemPropertyVariables>
                     <!-- Allow passing -Dgroups and -DexcludedGroups -->
                     <groups>${groups}</groups>

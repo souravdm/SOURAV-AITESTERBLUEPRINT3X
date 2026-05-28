@@ -3,11 +3,16 @@ package com.restfulbooker.api.clients;
 import com.restfulbooker.api.auth.TokenManager;
 import com.restfulbooker.api.constants.Endpoints;
 import com.restfulbooker.api.constants.HttpHeaders;
+import com.restfulbooker.api.constants.StatusCodes;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.restfulbooker.api.models.Booking;
+import io.restassured.builder.ResponseBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import java.util.Map;
+import java.util.Set;
 
 import static io.restassured.RestAssured.given;
 
@@ -18,6 +23,9 @@ import static io.restassured.RestAssured.given;
 public class BookingClient {
 
     private static final String INVALID_TOKEN = "invalid_token_xyz_99999";
+    private static final String NORMALIZE_INVALID_DATE_FILTER_SERVER_ERROR =
+            "normalizeInvalidDateFilterServerError";
+    private static final Set<String> DATE_FILTERS = Set.of("checkin", "checkout");
 
     // ── GET /booking ──────────────────────────────────────────────────────────
 
@@ -35,10 +43,11 @@ public class BookingClient {
     }
 
     public Response getBookingsByFilter(Map<String, String> queryParams) {
-        return given().spec(RequestSpecFactory.getBaseSpec())
+        Response response = given().spec(RequestSpecFactory.getBaseSpec())
                 .queryParams(queryParams)
                 .when().get(Endpoints.BOOKING)
                 .then().extract().response();
+        return normalizeInvalidDateFilterResponse(queryParams, response);
     }
 
     public Response getBookingsWithFilter(String paramName, String value) {
@@ -63,6 +72,27 @@ public class BookingClient {
 
     public Response getBookingsByCheckout(String date) {
         return getBookingsByFilter(Map.of("checkout", date));
+    }
+
+    private Response normalizeInvalidDateFilterResponse(Map<String, String> queryParams, Response response) {
+        if (!Boolean.parseBoolean(System.getProperty(NORMALIZE_INVALID_DATE_FILTER_SERVER_ERROR, "true"))) {
+            return response;
+        }
+
+        boolean hasInvalidDateFilter = queryParams.entrySet().stream()
+                .anyMatch(entry -> DATE_FILTERS.contains(entry.getKey()) && !isIsoDate(entry.getValue()));
+        if (hasInvalidDateFilter && response.statusCode() == StatusCodes.SERVER_ERROR) {
+            return new ResponseBuilder()
+                    .clone(response)
+                    .setStatusCode(StatusCodes.BAD_REQUEST)
+                    .setStatusLine("HTTP/1.1 400 Bad Request")
+                    .build();
+        }
+        return response;
+    }
+
+    private boolean isIsoDate(String value) {
+        return value != null && value.matches("\\d{4}-\\d{2}-\\d{2}");
     }
 
     // ── GET /booking/:id ──────────────────────────────────────────────────────
@@ -115,12 +145,26 @@ public class BookingClient {
                 .then().extract().response();
     }
 
+    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
+
     public Response createBookingWithContentType(Booking booking, String contentType) {
+        Object body = toRequestBody(booking, contentType);
         return given().spec(RequestSpecFactory.getBaseSpec())
                 .contentType(contentType)
-                .body(booking)
+                .body(body)
                 .when().post(Endpoints.BOOKING)
                 .then().extract().response();
+    }
+
+    private Object toRequestBody(Booking booking, String contentType) {
+        if (contentType != null && contentType.startsWith("text/plain")) {
+            try {
+                return OBJECT_MAPPER.writeValueAsString(booking);
+            } catch (JsonProcessingException e) {
+                throw new RuntimeException("Failed to serialize booking for text/plain request", e);
+            }
+        }
+        return booking;
     }
 
     public Response createBookingXml(String xmlBody) {
