@@ -1,0 +1,345 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #0f1117;
+  color: #e1e4e8;
+  min-height: 100vh;
+}
+
+/* ── Header ── */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 24px;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-left { display: flex; align-items: center; gap: 12px; }
+.header-icon { font-size: 2rem; }
+
+.app-header h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #58a6ff;
+}
+
+.app-header p {
+  font-size: 0.75rem;
+  color: #8b949e;
+  letter-spacing: 0.05em;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.epic-input {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #e1e4e8;
+  font-size: 0.875rem;
+  padding: 8px 12px;
+  width: 180px;
+  transition: border-color 0.15s;
+}
+.epic-input:focus { outline: none; border-color: #58a6ff; }
+.epic-input::placeholder { color: #484f58; }
+
+/* ── Buttons ── */
+.btn {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  transition: opacity 0.15s, transform 0.1s;
+}
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn:not(:disabled):hover { opacity: 0.85; transform: translateY(-1px); }
+.btn:not(:disabled):active { transform: translateY(0); }
+
+.btn-primary { background: #238636; color: #fff; }
+.btn-generate { background: #1f6feb; color: #fff; }
+.btn-download { background: #6e40c9; color: #fff; }
+.btn-download-sm {
+  background: #6e40c9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: opacity 0.15s;
+}
+.btn-download-sm:hover { opacity: 0.8; }
+
+/* ── Status / Error ── */
+.error-banner {
+  background: #2d1215;
+  border: 1px solid #6e2229;
+  border-radius: 6px;
+  color: #f85149;
+  margin: 12px 24px;
+  padding: 10px 14px;
+  font-size: 0.875rem;
+}
+
+.status-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+  color: #8b949e;
+  font-size: 0.85rem;
+  padding: 10px 24px;
+}
+.status-bar.generating { color: #58a6ff; }
+
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Empty State ── */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 80px 20px;
+  color: #8b949e;
+  text-align: center;
+}
+.empty-icon { font-size: 3.5rem; }
+.empty-state h2 { color: #c9d1d9; font-size: 1.15rem; }
+.empty-state p { font-size: 0.9rem; }
+
+/* ── Layout ── */
+.app-body { padding: 20px 24px; }
+
+.panels { display: flex; gap: 20px; align-items: flex-start; }
+.panels.single .epic-panel { max-width: 720px; margin: 0 auto; }
+.panels.split .epic-panel { flex: 0 0 380px; max-height: calc(100vh - 120px); overflow-y: auto; }
+.panels.split .test-plan-panel { flex: 1; min-width: 0; max-height: calc(100vh - 120px); overflow-y: auto; }
+
+/* ── Panel ── */
+.panel {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid #30363d;
+  background: #1c2129;
+  gap: 10px;
+}
+.panel-header h2 { font-size: 1rem; font-weight: 700; color: #c9d1d9; }
+.panel-header-right { display: flex; align-items: center; gap: 10px; }
+
+.generated-at { font-size: 0.75rem; color: #8b949e; }
+
+.epic-id-chip {
+  background: #1f6feb22;
+  border: 1px solid #1f6feb66;
+  border-radius: 12px;
+  color: #58a6ff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px 10px;
+}
+
+/* ── Epic Details ── */
+.epic-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px 18px 0;
+}
+
+.epic-summary {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #c9d1d9;
+  padding: 10px 18px 4px;
+  line-height: 1.4;
+}
+
+.badge {
+  border-radius: 12px;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 2px 9px;
+  text-transform: uppercase;
+}
+
+.section { padding: 14px 18px; }
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #8b949e;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.count-chip {
+  background: #30363d;
+  border-radius: 10px;
+  color: #c9d1d9;
+  font-size: 0.72rem;
+  padding: 1px 7px;
+}
+
+.epic-description {
+  color: #8b949e;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.meta-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 6px 18px 14px;
+}
+.meta-item { display: flex; flex-direction: column; gap: 2px; font-size: 0.85rem; }
+.meta-label { color: #8b949e; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; }
+
+/* ── Child Issues ── */
+.empty-children { color: #8b949e; font-size: 0.85rem; }
+
+.children-list { display: flex; flex-direction: column; gap: 8px; }
+
+.child-row {
+  background: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 6px;
+  padding: 10px 12px;
+  transition: border-color 0.15s;
+}
+.child-row:hover { border-color: #30363d; }
+
+.child-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+.child-id {
+  color: #58a6ff;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.child-summary { color: #c9d1d9; font-size: 0.875rem; font-weight: 500; margin-bottom: 4px; }
+.child-desc { color: #8b949e; font-size: 0.8rem; line-height: 1.5; margin-bottom: 4px; }
+.child-meta { color: #6e7681; font-size: 0.75rem; }
+
+/* ── Markdown Body ── */
+.markdown-body {
+  padding: 20px 24px;
+  color: #c9d1d9;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.markdown-body h1 { font-size: 1.5rem; color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 8px; margin: 0 0 16px; }
+.markdown-body h2 { font-size: 1.15rem; color: #79c0ff; margin: 24px 0 10px; }
+.markdown-body h3 { font-size: 1rem; color: #d2a8ff; margin: 18px 0 8px; }
+.markdown-body h4 { font-size: 0.95rem; color: #ffa657; margin: 14px 0 6px; }
+.markdown-body p { margin: 0 0 10px; }
+.markdown-body ul, .markdown-body ol { margin: 0 0 10px 20px; }
+.markdown-body li { margin: 4px 0; }
+.markdown-body strong { color: #e1e4e8; }
+.markdown-body code {
+  background: #1c2129;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  color: #ffa657;
+  font-family: 'SF Mono', Consolas, monospace;
+  font-size: 0.85em;
+  padding: 1px 5px;
+}
+.markdown-body pre {
+  background: #1c2129;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  overflow-x: auto;
+  padding: 14px;
+  margin: 10px 0;
+}
+.markdown-body pre code {
+  background: none;
+  border: none;
+  color: #e1e4e8;
+  padding: 0;
+}
+.markdown-body table {
+  border-collapse: collapse;
+  margin: 12px 0;
+  width: 100%;
+}
+.markdown-body th {
+  background: #1c2129;
+  border: 1px solid #30363d;
+  color: #8b949e;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 8px 12px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.markdown-body td {
+  border: 1px solid #21262d;
+  padding: 8px 12px;
+  vertical-align: top;
+}
+.markdown-body tr:nth-child(even) td { background: #161b22; }
+.markdown-body blockquote {
+  border-left: 3px solid #30363d;
+  color: #8b949e;
+  margin: 10px 0;
+  padding-left: 14px;
+}
+.markdown-body hr { border: none; border-top: 1px solid #30363d; margin: 20px 0; }
+
+@media (max-width: 800px) {
+  .panels.split { flex-direction: column; }
+  .panels.split .epic-panel { flex: none; max-height: none; width: 100%; }
+  .panels.split .test-plan-panel { max-height: none; }
+  .app-header { flex-direction: column; align-items: flex-start; }
+}

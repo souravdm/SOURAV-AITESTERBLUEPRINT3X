@@ -1,0 +1,175 @@
+{
+  "fields": {
+    "project": { "key": "SCRUM" },
+    "summary": "Grit — Android Habit Tracker & Todo App (Habitly POC)",
+    "issuetype": { "id": "10001" },
+    "priority": { "name": "High" },
+    "labels": ["Android", "Kotlin", "JetpackCompose", "HabitTracker", "OpenSource", "KMP"],
+    "description": {
+      "type": "doc",
+      "version": 1,
+      "content": [
+        {
+          "type": "heading", "attrs": { "level": 2 },
+          "content": [{ "type": "text", "text": "1. Executive Summary" }]
+        },
+        {
+          "type": "paragraph",
+          "content": [{ "type": "text", "text": "Grit is a free, open-source Android productivity app that combines a daily habit tracker with a categorized todo list in one clean, Material You interface. Built with Kotlin and Jetpack Compose Multiplatform, targeting users who want a single lightweight app to manage both recurring habits and one-off tasks without subscriptions, ads, or artificial limits. Distributed under GPLv3 across Google Play, F-Droid, IzzyOnDroid, and GitHub." }]
+        },
+        {
+          "type": "heading", "attrs": { "level": 2 },
+          "content": [{ "type": "text", "text": "2. Problem Statement" }]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Habit trackers do not handle one-off tasks, leaving users dependent on a second app" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Todo apps do not show habit streaks or heatmaps, key drivers of long-term behavior change" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Many polished apps are paywalled with free tiers deliberately limited to drive upgrades" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Open-source alternatives often have dated UI — Material You and Expressive Motion are rare" }] }] }
+          ]
+        },
+        {
+          "type": "heading", "attrs": { "level": 2 },
+          "content": [{ "type": "text", "text": "3. Goals & KPIs" }]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Provide a single unified productivity app covering both habits and tasks" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Deliver polished Material You design with Expressive Motion animations" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Keep all features free — no IAP, no ads, no arbitrary limits" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Target Month 3: >1,500 GitHub stars, >4.3 Play rating, >35% Day-7 retention, >5,000 F-Droid installs" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Target Month 12: >3,000 GitHub stars, >4.5 Play rating, >45% Day-7 retention, >25,000 F-Droid installs" }] }] }
+          ]
+        },
+        {
+          "type": "heading", "attrs": { "level": 2 },
+          "content": [{ "type": "text", "text": "4. Feature Requirements" }]
+        },
+        {
+          "type": "heading", "attrs": { "level": 3 },
+          "content": [{ "type": "text", "text": "Habit Tracker Module" }]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "F-01 (P0) Habit Creation & Scheduling — title, description, reminder time, active days (DayOfWeek). Serializable model for backup/restore." }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "F-02 (P0) Daily Check-In — Habits List shows today's applicable habits. Tap to mark complete. HabitStatus record stored per date + habitId." }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "F-03 (P0) Streak Tracking — current streak, best streak, StreakPosition enum. Missed applicable day resets streak." }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "F-04 (P0) Habit Analytics — consistency score, weekly comparison chart (1yr history), monthly calendar heatmap (GitHub-style), OverallAnalytics aggregation." }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "F-05 (P0) Habit Reminders — daily recurring notifications. Quick check-in from notification action button. Toggle per habit." }] }] }
+          ]
+        },
+        {
+          "type": "heading", "attrs": { "level": 3 },
+          "content": [{ "type": "text", "text": "Todo / Task Module" }]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "F-06 (P0) Task Categories — named, colored, reorderable groups. Drag-and-drop via Compose Reorderable." }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "F-07 (P0) Task Management — title, completion status, display order, drag-to-reorder within categories." }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "F-08 (P1) Task Reminders — one-time datetime reminders for deadline-style tasks (LocalDateTime)." }] }] }
+          ]
+        },
+        {
+          "type": "heading", "attrs": { "level": 3 },
+          "content": [{ "type": "text", "text": "Settings & Customization" }]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "F-09 (P1) Material You Dynamic Theming — wallpaper palette on Android 12+; custom color picker for older versions." }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "F-10 (P1) Localization — Weblate translations, in-app language picker (Android 13+), RTL layout support." }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "F-11 (P0) Home Screen Widgets — Jetpack Glance widgets showing today's habits. Tap to complete without opening app." }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "F-12 (P1) Backup & Restore — export/import all habit, task, category, and status data. User-selectable export location." }] }] }
+          ]
+        },
+        {
+          "type": "heading", "attrs": { "level": 2 },
+          "content": [{ "type": "text", "text": "5. Technical Architecture" }]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "UI: Jetpack Compose Multiplatform (Android + WASM web demo)" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Persistence: Room (Android) + SQLDelight pattern with schema versioning" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "DI: Koin + Koin Annotations with KSP compile-time validation" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Async: Kotlin Coroutines + Flow for reactive repository layer" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Widgets: Jetpack Glance (androidx.glance.appwidget)" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Architecture: Clean Architecture + MVI-inspired presentation, domain-driven feature structure" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Multiplatform: KMP shared business logic between Android and WASM web demo" }] }] }
+          ]
+        },
+        {
+          "type": "heading", "attrs": { "level": 2 },
+          "content": [{ "type": "text", "text": "6. Key Data Models" }]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Habit — id, title, description, time (LocalDateTime), days (Set of DayOfWeek), index, reminder (Boolean)" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "HabitStatus — ties habit completion to a specific LocalDate" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "OverallAnalytics — heatMapData (Map of LocalDate to Int), weekDayFrequencyData, consistency (Float 0-1), topHabits" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Task — id, categoryId, title, index, status (Boolean), reminder (LocalDateTime nullable)" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Category — id, name, index, color (String, reserved for future use)" }] }] }
+          ]
+        },
+        {
+          "type": "heading", "attrs": { "level": 2 },
+          "content": [{ "type": "text", "text": "7. Constraints & Out of Scope" }]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "GPLv3 license — any derivative must also be GPLv3" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "No cloud sync — data is local only; backup/restore is the only cross-device mechanism (intentional for privacy)" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "No monetization — no IAP, no ads, no subscription" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Android primary target — iOS not supported; WASM web demo is a showcase only" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Out of scope: iOS native app, cloud sync, social features, paid tier, Wear OS, category color in UI" }] }] }
+          ]
+        },
+        {
+          "type": "heading", "attrs": { "level": 2 },
+          "content": [{ "type": "text", "text": "8. Risks & Mitigations" }]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Risk (Medium): No cloud sync causes data loss on device reset. Mitigation: improve backup UX; consider auto-backup to Google Drive in v2." }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Risk (Medium): Android OS changes break Glance widget rendering. Mitigation: abstract widget data access; monitor Glance release notes." }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Risk (High): Solo maintainer bandwidth limits issue resolution. Mitigation: recruit co-maintainers via GitHub Discussions; label good first issues." }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Risk (Medium): Weblate translations become stale for minority languages. Mitigation: automate staleness detection; prune inactive locales." }] }] }
+          ]
+        },
+        {
+          "type": "heading", "attrs": { "level": 2 },
+          "content": [{ "type": "text", "text": "9. Roadmap" }]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Social progress sharing — shareable cards showing habit streaks and consistency stats" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Category color usage — render colored category chips and section headers" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Expanded multiplatform — KMP foundation laid for desktop or full iOS support" }] }] }
+          ]
+        },
+        {
+          "type": "heading", "attrs": { "level": 2 },
+          "content": [{ "type": "text", "text": "10. References" }]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Source: github.com/shub39/Grit" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Google Play: play.google.com/store/apps/details?id=com.shub39.grit" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Web Demo: shub39.github.io/Grit" }] }] },
+            { "type": "listItem", "content": [{ "type": "paragraph", "content": [{ "type": "text", "text": "Translations: hosted.weblate.org/engage/grit/" }] }] }
+          ]
+        }
+      ]
+    }
+  }
+}
