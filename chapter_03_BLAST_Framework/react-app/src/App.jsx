@@ -1,20 +1,24 @@
 import { useState } from 'react';
 import EpicDetails from './components/EpicDetails.jsx';
-import TestPlan from './components/TestPlan.jsx';
+import OutputPanel from './components/OutputPanel.jsx';
 
 export default function App() {
   const [epicId, setEpicId] = useState('SCRUM-6');
   const [epic, setEpic] = useState(null);
   const [testPlan, setTestPlan] = useState(null);
-  const [fetchStatus, setFetchStatus] = useState('idle'); // idle | loading | done | error
+  const [testStrategy, setTestStrategy] = useState(null);
+  const [fetchStatus, setFetchStatus] = useState('idle');
   const [generateStatus, setGenerateStatus] = useState('idle');
+  const [strategyStatus, setStrategyStatus] = useState('idle');
   const [error, setError] = useState(null);
 
   async function fetchEpic() {
     setFetchStatus('loading');
     setEpic(null);
     setTestPlan(null);
+    setTestStrategy(null);
     setGenerateStatus('idle');
+    setStrategyStatus('idle');
     setError(null);
     try {
       const res = await fetch(`/api/epic/${epicId.trim()}`);
@@ -48,16 +52,38 @@ export default function App() {
     }
   }
 
-  function downloadMarkdown() {
-    if (!testPlan) return;
-    const blob = new Blob([testPlan.test_plan_content], { type: 'text/markdown' });
+  async function generateTestStrategy() {
+    setStrategyStatus('loading');
+    setTestStrategy(null);
+    setError(null);
+    try {
+      const res = await fetch('/api/generate-test-strategy', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ epic }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to generate test strategy');
+      setTestStrategy(data);
+      setStrategyStatus('done');
+    } catch (err) {
+      setError(err.message);
+      setStrategyStatus('error');
+    }
+  }
+
+  function downloadMarkdown(content, filename) {
+    const blob = new Blob([content], { type: 'text/markdown' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `${testPlan.jira_id}_test_plan.md`;
+    a.download = filename;
     a.click();
     URL.revokeObjectURL(url);
   }
+
+  const hasOutput = testPlan || testStrategy;
+  const isBusy = generateStatus === 'loading' || strategyStatus === 'loading';
 
   return (
     <div className="app">
@@ -88,15 +114,17 @@ export default function App() {
           <button
             className="btn btn-generate"
             onClick={generateTestPlan}
-            disabled={!epic || generateStatus === 'loading'}
+            disabled={!epic || isBusy}
           >
-            {generateStatus === 'loading' ? 'Generating...' : 'Generate Test Plan'}
+            {generateStatus === 'loading' ? 'Generating Plan...' : 'Generate Test Plan'}
           </button>
-          {testPlan && (
-            <button className="btn btn-download" onClick={downloadMarkdown}>
-              Download .md
-            </button>
-          )}
+          <button
+            className="btn btn-strategy"
+            onClick={generateTestStrategy}
+            disabled={!epic || isBusy}
+          >
+            {strategyStatus === 'loading' ? 'Generating Strategy...' : 'Generate Test Strategy'}
+          </button>
         </div>
       </header>
 
@@ -118,6 +146,12 @@ export default function App() {
         </div>
       )}
 
+      {strategyStatus === 'loading' && (
+        <div className="status-bar strategy">
+          <span className="spinner" /> Claude is generating the test strategy — this may take 20–40 seconds...
+        </div>
+      )}
+
       <main className="app-body">
         {!epic && fetchStatus !== 'loading' && fetchStatus !== 'error' && (
           <div className="empty-state">
@@ -128,12 +162,18 @@ export default function App() {
         )}
 
         {epic && (
-          <div className={`panels ${testPlan ? 'split' : 'single'}`}>
+          <div className={`panels ${hasOutput ? 'split' : 'single'}`}>
             <EpicDetails epic={epic} />
-            {testPlan && (
-              <TestPlan
+            {hasOutput && (
+              <OutputPanel
                 testPlan={testPlan}
-                onDownload={downloadMarkdown}
+                testStrategy={testStrategy}
+                onDownloadPlan={() =>
+                  downloadMarkdown(testPlan.test_plan_content, `${testPlan.jira_id}_test_plan.md`)
+                }
+                onDownloadStrategy={() =>
+                  downloadMarkdown(testStrategy.test_strategy_content, `${testStrategy.jira_id}_test_strategy.md`)
+                }
               />
             )}
           </div>

@@ -11,8 +11,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // Load .env from parent directory (chapter_03_BLAST_Framework/.env)
 config({ path: join(__dirname, '../.env') });
 
-// Load TestPlan-Skill.md as the Claude system prompt
-const TEST_PLAN_SKILL = readFileSync(join(__dirname, '../tools/TestPlan-Skill.md'), 'utf-8');
+// Load skill files as Claude system prompts
+const TEST_PLAN_SKILL     = readFileSync(join(__dirname, '../tools/TestPlan-Skill.md'), 'utf-8');
+const TEST_STRATEGY_SKILL = readFileSync(join(__dirname, '../tools/TestStrategy-Skill.md'), 'utf-8');
 
 const app = express();
 app.use(cors());
@@ -311,6 +312,81 @@ Do NOT regenerate sections 1–16.`;
       jira_id: epic.id,
       generated_at: new Date().toISOString(),
       test_plan_content: testPlanMarkdown,
+    });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/generate-test-strategy  — send epic data to Claude for a high-level test strategy
+app.post('/api/generate-test-strategy', async (req, res) => {
+  const { epic } = req.body;
+  if (!epic) return res.status(400).json({ error: 'Missing epic data' });
+
+  const apiKey = ANTHROPIC_API_KEY;
+  if (!apiKey || apiKey === 'your-claude-api-key') {
+    return res.status(500).json({ error: 'ANTHROPIC_API_KEY not set in .env' });
+  }
+
+  const client = new Anthropic({ apiKey });
+
+  const children = epic.children || [];
+  const today = new Date().toISOString().split('T')[0];
+
+  const epicContext = `
+EPIC ID: ${epic.id}
+Summary: ${epic.summary}
+Status: ${epic.status}
+Priority: ${epic.priority || 'N/A'}
+Issue Type: ${epic.issuetype}
+Labels: ${epic.labels.join(', ') || 'None'}
+Assignee: ${epic.assignee || 'Unassigned'}
+Reporter: ${epic.reporter || 'N/A'}
+Today's date: ${today}
+
+EPIC DESCRIPTION:
+${epic.description || 'No description provided.'}
+
+CHILD ISSUES (${children.length} total):
+${children.map((c, i) => `${i + 1}. [${c.id}] ${c.summary} (${c.issuetype}, ${c.status}, Priority: ${c.priority || 'N/A'})`).join('\n') || 'None'}
+`.trim();
+
+  const prompt = `${epicContext}
+
+TASK: Generate a professional, concise, and actionable Test Strategy document for this JIRA Epic as defined in your instructions.
+
+The strategy must reference the specific Epic and child issue summaries — do not be generic. Use the child issue IDs and titles to make every section specific to this product area.
+
+Produce all 13 sections as defined in your instructions:
+1. Objective
+2. Scope (2.1 In Scope, 2.2 Out of Scope)
+3. Focus Areas
+4. Test Approach
+5. Test Techniques (table)
+6. Test Tooling & Automation Strategy
+7. Deliverables (table)
+8. Team & Schedule (8.1 Team, 8.2 Proposed Schedule table)
+9. Entry Criteria
+10. Exit Criteria
+11. Risks & Mitigations (table — minimum 6 risks)
+12. Assumptions (minimum 6 numbered)
+13. Open Questions (minimum 4)`;
+
+  try {
+    console.log(`Generating test strategy for ${epic.id} (${children.length} child issues)`);
+
+    const result = await client.messages.create({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 8192,
+      system: TEST_STRATEGY_SKILL,
+      messages: [{ role: 'user', content: prompt }],
+    });
+
+    res.json({
+      jira_id: epic.id,
+      generated_at: new Date().toISOString(),
+      test_strategy_content: result.content[0].text,
     });
   } catch (err) {
     console.error(err);

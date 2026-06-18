@@ -71,8 +71,9 @@ body {
 .btn:not(:disabled):hover { opacity: 0.85; transform: translateY(-1px); }
 .btn:not(:disabled):active { transform: translateY(0); }
 
-.btn-primary { background: #238636; color: #fff; }
+.btn-primary  { background: #238636; color: #fff; }
 .btn-generate { background: #1f6feb; color: #fff; }
+.btn-strategy { background: #0e7490; color: #fff; }
 .btn-download { background: #6e40c9; color: #fff; }
 .btn-download-sm {
   background: #6e40c9;
@@ -86,6 +87,7 @@ body {
   transition: opacity 0.15s;
 }
 .btn-download-sm:hover { opacity: 0.8; }
+.btn-download-strategy { background: #0e7490; }
 
 /* ── Status / Error ── */
 .error-banner {
@@ -109,6 +111,7 @@ body {
   padding: 10px 24px;
 }
 .status-bar.generating { color: #58a6ff; }
+.status-bar.strategy  { color: #22d3ee; }
 
 .spinner {
   display: inline-block;
@@ -336,6 +339,30 @@ body {
   padding-left: 14px;
 }
 .markdown-body hr { border: none; border-top: 1px solid #30363d; margin: 20px 0; }
+
+/* ── Tab Bar ── */
+.tab-bar {
+  display: flex;
+  gap: 4px;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #8b949e;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.tab-btn:hover { background: #21262d; color: #c9d1d9; }
+.tab-btn--active {
+  background: #1f6feb22;
+  border-color: #1f6feb;
+  color: #58a6ff;
+}
 
 @media (max-width: 800px) {
   .panels.split { flex-direction: column; }
